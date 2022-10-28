@@ -1,0 +1,2 @@
+MultiCore hello world project
+==============

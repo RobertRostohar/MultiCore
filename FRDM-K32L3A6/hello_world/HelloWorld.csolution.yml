@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Open-CMSIS-Pack/devtools/schemas/projmgr/1.0.0/tools/projmgr/schemas/csolution.schema.json
+
+solution:
+  packs:
+    - pack: ARM::CMSIS
+    - pack: NXP::K32L3A60_DFP@15.0.0
+
+  target-types:
+    - type: FRDM-K32L3A6_cm4
+      # board:FRDM-K32L3A6
+      device: K32L3A60VPJ1A:cm4
+    - type: FRDM-K32L3A6_cm0plus
+      # board:FRDM-K32L3A6
+      device: K32L3A60VPJ1A:cm0plus
+
+  build-types:
+    - type: Debug
+      compiler: AC6
+      misc:
+        - C-CPP:
+          - -O1
+          - -I ./middleware/multicore/mcmgr/src
+          - -fno-common
+          - -fdata-sections
+          - -ffreestanding
+          - -fno-builtin
+          - -mthumb
+          - -g
+          - -Wno-macro-redefined
+          - -Wno-pragma-pack
+          - -Wno-parentheses-equality
+          - -ffunction-sections
+          - -fshort-enums
+          - -fshort-wchar
+          - -fsigned-char
+          - -gdwarf-4
+          - -D__MICROLIB
+          - -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -fno-common -fdata-sections -ffreestanding -fno-builtin -mthumb -Wno-macro-redefined -Wno-pragma-pack -Wno-parentheses-equality
+        - C:
+          - -std=c99
+        - Link:
+          - '--diag_suppress 6314'
+          - --remove
+          - --entry=Reset_Handler
+  projects:
+    - project: ./HelloWorld.cproject.yml
