@@ -1,2 +1,2 @@
-# MultilCore
+# MultiCore
 MultiCore csolution demo
