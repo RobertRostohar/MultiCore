@@ -3,7 +3,7 @@
 project:
   device: :cm0plus
 
-  defines:
+  define:
     - DEBUG
     - CPU_K32L3A60VPJ1A_cm0plus
     - MCMGR_HANDLE_EXCEPTIONS=1

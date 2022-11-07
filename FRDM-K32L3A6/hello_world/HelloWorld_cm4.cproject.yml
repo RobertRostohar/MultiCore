@@ -3,7 +3,7 @@
 project:
   device: :cm4
 
-  defines:
+  define:
     - DEBUG
     - CPU_K32L3A60VPJ1A_cm4
     - MCMGR_HANDLE_EXCEPTIONS=1
