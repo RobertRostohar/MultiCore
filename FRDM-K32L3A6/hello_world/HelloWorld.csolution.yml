@@ -6,12 +6,9 @@ solution:
     - pack: NXP::K32L3A60_DFP@15.0.0
 
   target-types:
-    - type: FRDM-K32L3A6_cm4
+    - type: FRDM-K32L3A6
       # board:FRDM-K32L3A6
-      device: K32L3A60VPJ1A:cm4
-    - type: FRDM-K32L3A6_cm0plus
-      # board:FRDM-K32L3A6
-      device: K32L3A60VPJ1A:cm0plus
+      device: K32L3A60VPJ1A
 
   build-types:
     - type: Debug
@@ -43,4 +40,5 @@ solution:
           - --remove
           - --entry=Reset_Handler
   projects:
-    - project: ./HelloWorld.cproject.yml
+    - project: ./HelloWorld_cm0plus.cproject.yml
+    - project: ./HelloWorld_cm4.cproject.yml

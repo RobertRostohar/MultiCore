@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Open-CMSIS-Pack/devtools/schemas/projmgr/1.0.0/tools/projmgr/schemas/cproject.schema.json
 
 project:
+  device: :cm0plus
   groups:
     - group: Documentation
       files: 
@@ -14,9 +15,4 @@ project:
         - file: ./middleware/multicore/mcmgr/src/mcmgr_mu_internal.c
 
   layers:
-    - layer: ./Board/FRDM-K32L3A6_cm4/Board.clayer.yml
-      for-type: 
-        - +FRDM-K32L3A6_cm4
     - layer: ./Board/FRDM-K32L3A6_cm0plus/Board.clayer.yml
-      for-type: 
-        - +FRDM-K32L3A6_cm0plus
