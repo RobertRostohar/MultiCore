@@ -16,12 +16,6 @@ The Multicore Hello World demo for FRDM-K32L3A6 board. See more details in [read
 1. Use the `csolution` command to create `.cprj` project files.
    ```
    > csolution convert -s HelloWorld.csolution.yml
-   ```
-   >Note: convert each context separately in order to bypass a tool issue.
-   ```
-   > csolution convert -s HelloWorld.csolution.yml -c HelloWorld_cm0plus.Debug+FRDM-K32L3A6
-   > csolution convert -s HelloWorld.csolution.yml -c HelloWorld_cm4.Debug+FRDM-K32L3A6
-   ```
 
 2. Use the `cbuild` command to create executable files.
    ```
