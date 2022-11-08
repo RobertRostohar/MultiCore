@@ -13,12 +13,6 @@ project:
   add-path:
     - ./middleware/multicore/mcmgr/src
 
-  misc:
-    - ASM:
-      - -I ./out/HelloWorld_cm0plus/FRDM-K32L3A6/Debug
-    - Link:
-      - --keep=*(*core1_code)
-
   components:
     - component: NXP::Device:Startup
     - component: NXP::Device:CMSIS:K32L3A60_header
@@ -37,7 +31,6 @@ project:
 
     - component: NXP::Device:SDK Utilities:assert
     - component: NXP::Device:SDK Utilities:debug_console
-    - component: NXP::Device:SDK Utilities:incbin
     - component: NXP::Device:SDK Utilities:serial_manager
     - component: NXP::Device:SDK Utilities:serial_manager_uart
 

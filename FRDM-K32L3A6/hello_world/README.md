@@ -22,5 +22,3 @@ The Multicore Hello World demo for FRDM-K32L3A6 board. See more details in [read
    > cbuild HelloWorld_cm0plus.Debug+FRDM-K32L3A6.cprj
    > cbuild HelloWorld_cm4.Debug+FRDM-K32L3A6.cprj
    ```
-   >Note: It is necessary to use a different name for the `cm0plus` binary after building the `cm0plus` target and before building the `cm4` target. 
-    Go to subdirectory `out/HelloWorld_cm0plus/FRDM-K32L3A6/Debug` and copy (or rename) the file `HelloWorld_cm0plus.Debug+FRDM-K32L3A6.bin` to `core1_image.bin`.
