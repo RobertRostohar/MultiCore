@@ -4,12 +4,14 @@ project:
   device: :cm0plus
 
   define:
-    - DEBUG
     - CPU_K32L3A60VPJ1A_cm0plus
     - MCMGR_HANDLE_EXCEPTIONS=1
     - __SEMIHOST_HARDFAULT_DISABLE=1
     - MULTICORE_APP=1
     - MCUXPRESSO_SDK
+
+  add-path:
+    - ./middleware/multicore/mcmgr/src
 
   components:
     - component: NXP::Device:Startup
@@ -40,7 +42,7 @@ project:
     - group: Documentation
       files: 
         - file: ./readme.txt
-    - group: App
+    - group: Application
       files:
         - file: ./cm0plus/hello_world_core1.c
         - file: ./RTE/Device/K32L3A60VPJ1A_cm0plus/K32L3A60xxx_cm0plus_flash.scf
