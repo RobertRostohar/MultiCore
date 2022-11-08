@@ -10,23 +10,6 @@ solution:
       # board:FRDM-K32L3A6
       device: K32L3A60VPJ1A
 
-  build-types:
-    - type: Debug
-      compiler: AC6
-      misc:
-        - C-CPP:
-          - -O1
-          - -ffreestanding
-          - -fno-builtin
-          - -mthumb
-          - -g
-          - -gdwarf-4
-        - C:
-          - -std=c99
-        - Link:
-          - '--diag_suppress 6314'
-          - --remove
-          - --entry=Reset_Handler
   projects:
     - project: ./HelloWorld_cm0plus.cproject.yml
     - project: ./HelloWorld_cm4.cproject.yml

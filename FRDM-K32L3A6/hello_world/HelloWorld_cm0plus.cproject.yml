@@ -3,6 +3,8 @@
 project:
   device: :cm0plus
 
+  compiler: AC6
+
   define:
     - CPU_K32L3A60VPJ1A_cm0plus
     - MCMGR_HANDLE_EXCEPTIONS=1
@@ -46,6 +48,7 @@ project:
       files:
         - file: ./cm0plus/hello_world_core1.c
         - file: ./RTE/Device/K32L3A60VPJ1A_cm0plus/K32L3A60xxx_cm0plus_flash.scf
+          for-compiler: AC6
     - group: Middleware
       files: 
         - file: ./middleware/multicore/mcmgr/src/mcmgr.c

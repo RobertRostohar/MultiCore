@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Open-CMSIS-Pack/devtools/schemas/projmgr/1.2.0/tools/projmgr/schemas/cdefault.schema.json
+
+default:
+  compiler: AC6
+
+  build-types:
+    - type: Debug
+      optimize: none
+      debug: on
+      misc:
+        - for-compiler: AC6
+          C-CPP:
+            - -fno-builtin
+          C:
+            - -std=c99
+          Link:
+            - '--diag_suppress 6314'
+            - --entry=Reset_Handler
+    - type: Release
+      optimize: balanced
+      debug: off
+      misc:
+        - for-compiler: AC6
+          C-CPP:
+            - -fno-builtin
+          C:
+          - -std=c99
+          Link:
+            - '--diag_suppress 6314'
+            - --entry=Reset_Handler
