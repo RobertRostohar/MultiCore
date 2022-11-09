@@ -19,8 +19,8 @@ The Multicore Hello World demo for FRDM-K32L3A6 board. See more details in [read
 
 2. Use the `cbuild` command to create executable files.
    ```
-   > cbuild HelloWorld_cm0plus.Debug+FRDM-K32L3A6.cprj
-   > cbuild HelloWorld_cm4.Debug+FRDM-K32L3A6.cprj
+   > cbuild cm0plus/HelloWorld_cm0plus.Debug+FRDM-K32L3A6.cprj
+   > cbuild cm4/HelloWorld_cm4.Debug+FRDM-K32L3A6.cprj
    ```
 
 ## Programming

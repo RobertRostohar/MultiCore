@@ -11,5 +11,5 @@ solution:
       device: K32L3A60VPJ1A
 
   projects:
-    - project: ./HelloWorld_cm0plus.cproject.yml
-    - project: ./HelloWorld_cm4.cproject.yml
+    - project: ./cm0plus/HelloWorld_cm0plus.cproject.yml
+    - project: ./cm4/HelloWorld_cm4.cproject.yml

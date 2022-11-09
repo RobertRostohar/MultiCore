@@ -13,7 +13,7 @@ project:
     - MCUXPRESSO_SDK
 
   add-path:
-    - ./middleware/multicore/mcmgr/src
+    - ../middleware/multicore/mcmgr/src
 
   components:
     - component: NXP::Device:Startup
@@ -43,16 +43,16 @@ project:
   groups:
     - group: Documentation
       files: 
-        - file: ./readme.txt
+        - file: ../readme.txt
     - group: Application
       files:
-        - file: ./cm4/hello_world_core0.c
+        - file: ./hello_world_core0.c
         - file: ./RTE/Device/K32L3A60VPJ1A_cm4/K32L3A60xxx_cm4_flash.scf
           for-compiler: AC6
     - group: Middleware
       files: 
-        - file: ./middleware/multicore/mcmgr/src/mcmgr.c
-        - file: ./middleware/multicore/mcmgr/src/mcmgr.h
-        - file: ./middleware/multicore/mcmgr/src/mcmgr_internal_core_api.h
-        - file: ./middleware/multicore/mcmgr/src/mcmgr_internal_core_api_k32l3a6.c
-        - file: ./middleware/multicore/mcmgr/src/mcmgr_mu_internal.c
+        - file: ../middleware/multicore/mcmgr/src/mcmgr.c
+        - file: ../middleware/multicore/mcmgr/src/mcmgr.h
+        - file: ../middleware/multicore/mcmgr/src/mcmgr_internal_core_api.h
+        - file: ../middleware/multicore/mcmgr/src/mcmgr_internal_core_api_k32l3a6.c
+        - file: ../middleware/multicore/mcmgr/src/mcmgr_mu_internal.c
