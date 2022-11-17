@@ -5,8 +5,8 @@ The Multicore Hello World demo for FRDM-K32L3A6 board. See more details in [read
 ## Prerequisites
 
 ### Tools:
- - [CMSIS-Toolbox 1.3.0-dev1](https://github.com/brondani/cmsis-toolbox/releases/tag/1.3.0-dev1) or higher
- - Arm Compiler 6.18 or higher
+ - [CMSIS-Toolbox 1.3.0](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/releases/tag/1.3.0) or later
+ - Arm Compiler 6.18 or later
 
 ### Packs:
  - Required packs are listed in the file [`HelloWorld.csolution.yml`](./HelloWorld.csolution.yml)
